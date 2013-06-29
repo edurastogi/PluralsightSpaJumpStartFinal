@@ -13,6 +13,11 @@
         </button>
         <i class="icon-asterisk" data-bind="visible: hasChanges"></i>
     </div>
+    
+    <div data-bind="dump: $data, enable: false"></div>
+    <div data-bind="dump: session, enable: false"></div>
+    <div data-bind="dump: session().speaker, enable: false"></div>
+    
     <div data-bind="with: session">    
         <div class="titleblock">
             <label for="title">Title</label>

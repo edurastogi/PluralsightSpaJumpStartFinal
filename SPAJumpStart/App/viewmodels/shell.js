@@ -3,8 +3,9 @@
         'durandal/plugins/router',
         'durandal/app',
         'config',
+        'services/dump',
         'services/datacontext'],
-    function (system, logger, router, app, config, datacontext) {
+    function (system, logger, router, app, config, dump, datacontext) {
 
         var adminRoutes = ko.computed(function() {
             return router.allRoutes().filter(function(r) {
